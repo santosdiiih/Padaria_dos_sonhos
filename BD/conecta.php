@@ -2,7 +2,7 @@
     function conexaoMysql (){
         $server = 'localhost';
         $user = 'root';
-        $password = 'bcd127';
+        $password = '';
         $dataBase = 'dbPadokas';
     
         $conexao = mysqli_connect($server, $user, $password, $dataBase);
