@@ -1,0 +1,599 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 150px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    min-height: 550px;
+    padding: 15px;
+    box-sizing: border-box;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+    margin-top: 20px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.titulo {
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: Arial, Helvetica;
+    margin-top: 30px;
+    float: left;
+}
+
+.configuracaoImg img {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    float: left;
+    margin-left: 150px;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.admConteudo,
+.contato,
+.admUser {
+    width: 20%;
+    height: 65px;
+    /* border: solid 1px black; */
+    font-family: Arial, Helvetica;
+    font-size: 1.2em;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.admConteudo img,
+.contato img,
+.admUser img {
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.userLog {
+    width: 160px;
+    height: 100px;
+    float: left;
+    font-size: 1.2em;
+    margin-left: 230px;
+}
+
+.logOut {
+    text-align: right;
+    margin-top: 30px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.conteudo p {
+    text-align: center;
+    font-size: 2.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+#tblFaleConosco {
+    width: 100%;
+    min-height: 150px;
+    height: auto;
+}
+
+#tituloFaleConosco {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 2.0em;
+    background-color: black;
+}
+
+.tblLinhaTituloFaleConosco {
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+.tblColunasfaleConosco {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border: solid 1px black;
+}
+
+.tblLinhasFaleConosco {
+    width: 100%;
+    height: 20px;
+}
+
+.excluir {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/lixo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    margin-left: 40px;
+}
+
+.visualizar {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/search.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 40px;
+}
+
+#modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    position: fixed;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    box-sizing: border-box;
+    display: none;
+}
+
+#modalConteudo {
+    width: 60vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+#visualizar table {
+    width: inherit;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+#visualizar table tr {
+    height: 20px;
+}
+
+#visualizar table tr td {
+    width: 50%;
+    border: solid 1px black;
+}
+
+#tituloVisualizar {
+    text-align: center;
+    font-size: 2.2em;
+    color: white;
+    background-color: black;
+}
+
+#fechar {
+    display: flex;
+    align-items: right;
+    font-size: 2.0em;
+    text-decoration: none;
+    color: black;
+}
+
+.grupo {
+    width: 650px;
+    min-height: 40px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.valueInput {
+    width: 115px;
+    height: 33px;
+    border: solid 1px black;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.input {
+    width: 320px;
+    height: 30px;
+    /* border: solid 1px blsack; */
+}
+
+.input input {
+    width: 200px;
+    height: 30px;
+}
+
+.cadastrarUsuario,
+.visualizarUsuario,
+.admNiveis {
+    width: 210px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 100px;
+    float: left;
+}
+
+.cadastrarUsuario img,
+.visualizarUsuario img,
+.admNiveis img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.cadastrarUsuario a,
+.visualizarUsuario a,
+.admNiveis a {
+    width: 100px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.containerNivel {
+    width: 300px;
+    min-height: 50px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableNivel table {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableNivel table tr {
+    height: 50px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.tableNivel table tr td {
+    width: 30%;
+    border: solid 1px black;
+}
+
+.tblVisualizarUsuarios table {
+    width: inherit;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.0em;
+}
+
+.tblVisualizarUsuarios table tr {
+    height: 30px;
+}
+
+.tblVisualizarUsuarios table tr td {
+    width: 8%;
+    border: solid 1px black;
+}
+
+.excluirUser img,
+.editarUser img,
+.desativarUser img {
+    width: 30px;
+    height: 30px;
+}
+
+.editarUsuario {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/edit.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#modalUsuario {
+    width: 500px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.tituloAtualizaDados {
+    width: inherit;
+    height: 70px;
+    color: white;
+    background-color: black;
+    font-size: 2.3em;
+    text-align: center;
+    border: solid 2px black;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.frmUsuario {
+    width: inherit;
+    height: inherit;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.frmUsuario .grupo {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.tblNiveis table {
+    width: 80%;
+    height: inherit;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+}
+
+.tblNiveis table tr {
+    height: 50px;
+}
+
+.tblNiveis table tr td {
+    width: 10%;
+    /* background-color: black; */
+}
+
+.tituloNivel,
+.tituloUsuario,
+.titleCuriosidade,
+.titleCurisidade,
+.titleLoja,
+.titleSobre {
+    height: 80px;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.curiosidade,
+.loja,
+.sobre {
+    width: 30%;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.curiosidade a,
+.loja a,
+.sobre a {
+    text-decoration: none;
+    color: black;
+    float: left;
+    text-align: center;
+    font: 1.3em/100px arial;
+    margin-left: 10px;
+}
+
+.curiosidade img,
+.loja img,
+.sobre img {
+    height: 100px;
+    float: left;
+}
+
+.conteudoCuriosidade table,
+.visualizarConteudoCuriosidade table,
+.conteudoLoja table,
+.tblLoja table,
+.sobreTbl table {
+    width: 1000px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+    text-align: center;
+    /* border: solid 1px black; */
+}
+
+.conteudoCuriosidade table tr,
+.conteudoLoja table tr {
+    height: 100px;
+    padding: 10px;
+}
+
+.visualizarConteudoCuriosidade table tr {
+    height: 60px, ;
+}
+
+.conteudoCuriosidade table tr td,
+.visualizarConteudoCuriosidade tr td,
+.conteudoLoja table tr td {
+    width: 10px;
+    border: solid 1px black;
+}
+
+.conteudoLoja table tr td {
+    width: 20%;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.lojaimg,
+.sobreImg {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+}
+
+.lojaimg img,
+.sobreImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.inputTitle {
+    width: 200px;
+    height: 25px;
+    border: solid 1px black;
+}
+
+.textArea {
+    border: solid 1px black;
+    font-size: 1.3em;
+    resize: none;
+}
+
+.imgEstado img,
+.editar img {
+    width: 50px;
+    height: 50px;
+}
+
+.tblLoja table tr,
+.sobreTbl table tr {
+    height: 50px;
+}
+
+.sobreTbl table tr td {
+    width: 15%;
+    border: solid 1px black;
+}
+
+.tblLoja table tr td {
+    width: 20%;
+    border: solid 1px black;
+}
+
+.imgBanco img {
+    padding: 5px;
+    width: 60px;
+    height: 50px;
+}
+
+.conteudoSobre table,
+.sobreSesao2 table {
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: arial;
+    text-align: center;
+}
+
+.sobreSesao2 table {
+    margin-top: -200px;
+    margin-bottom: 80px;
+}
+
+.conteudoSobre table tr,
+.sobreSesao2 table tr {
+    height: 100px;
+    padding: 10px;
+}
+
+.conteudoSobre table tr td,
+.sobreSesao2 table tr td {
+    width: 40%;
+    border: solid 1px black;
+}
+
+.inputTextTitulo input {
+    width: 300px;
+    height: 25px;
+    border: solid 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+}
+
+.textAreaConteudo textarea {
+    border: solid 1px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+    resize: none;
+}
+
+#imagem {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: solid 1px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnEnviar {
+    width: 100px;
+    height: 30px;
+}
+
+.buttonEnviar {
+    margin-top: 200px;
+    width: 100;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonEnviar input {
+    width: 100px;
+    height: 35px;
+    border: solid 1px black;
+    margin-top: 30px;
+}
+
+.lixo {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/lixo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
